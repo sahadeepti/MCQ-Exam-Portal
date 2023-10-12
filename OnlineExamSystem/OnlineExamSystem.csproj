@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1B940B5B-4341-4290-A03F-4CFC377BCC69}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OnlineExamSystem</RootNamespace>
+    <AssemblyName>OnlineExamSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>OnlineExamSystem.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\exam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\exam.Designer.cs">
+      <DependentUpon>exam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\adminlogged.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\adminlogged.Designer.cs">
+      <DependentUpon>adminlogged.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\adminlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\adminlogin.Designer.cs">
+      <DependentUpon>adminlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\student.Designer.cs">
+      <DependentUpon>student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\studexam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\studexam.Designer.cs">
+      <DependentUpon>studexam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studresult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studresult.Designer.cs">
+      <DependentUpon>studresult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCcertificate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCcertificate.Designer.cs">
+      <DependentUpon>UCcertificate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCresult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCresult.Designer.cs">
+      <DependentUpon>UCresult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCadminstud.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCadminstud.Designer.cs">
+      <DependentUpon>UCadminstud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCadminquestion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCadminquestion.Designer.cs">
+      <DependentUpon>UCadminquestion.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\exam.resx">
+      <DependentUpon>exam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\adminlogged.resx">
+      <DependentUpon>adminlogged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\adminlogin.resx">
+      <DependentUpon>adminlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\student.resx">
+      <DependentUpon>student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\studexam.resx">
+      <DependentUpon>studexam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studresult.resx">
+      <DependentUpon>studresult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCcertificate.resx">
+      <DependentUpon>UCcertificate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCresult.resx">
+      <DependentUpon>UCresult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCadminstud.resx">
+      <DependentUpon>UCadminstud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCadminquestion.resx">
+      <DependentUpon>UCadminquestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
